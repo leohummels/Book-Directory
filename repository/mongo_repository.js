@@ -56,6 +56,14 @@ class MongoRepository {
         )
     }
 
+    async patch(id, book){
+        return await Object.entries(book).forEach(([key, value]) => {
+            let obj = {}
+            obj[key] = value
+            return this.bookCollection.findOneAndUpdate({id : id}, {$set: obj})
+        })
+    }
+
     remove(id){
         this.bookCollection.deleteOne({id:id})
         .then(result => console.log(result.result))

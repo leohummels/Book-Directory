@@ -58,6 +58,15 @@ router.put("/:id", async (req, res) => {
     res.status(200).json(result)
 })
 
+router.patch("/:id", async (req, res) => {
+    const id = req.params.id
+    const body = req.body
+
+    service.patch(id, body)
+
+    res.sendStatus(204)
+})
+
 router.delete('/:id', (req, res) => {
     const idBook = req.params.id
 

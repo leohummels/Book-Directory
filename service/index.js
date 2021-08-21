@@ -21,6 +21,10 @@ class Service {
         this.repository.updateBook(parseInt(id, 2), body)
     }
 
+    patch(id, body){
+        return this.repository.patch(parseInt(id, 2), body)
+    }
+
     delete(id){
         this.repository.remove(parseInt(id, 2))
     }
