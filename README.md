@@ -1,5 +1,5 @@
 # Book Directory
-Uma aplicação adaptada de um tutorial escrito por [Guilherme Alves](https://programadev.com.br/express-rest-I/ "Guilherme Alves"). Para os iniciantes como eu, vale muito a pena conferir!!
+Uma aplicação adaptada de um tutorial escrito por [Guilherme Alves](https://programadev.com.br/express-rest-I/ "Guilherme Alves"). Para os iniciantes, como eu, vale muito a pena conferir!!
 
 É uma api simples que apresenta verbos HTTP comumente usados em aplicações REST. A aplicação foi desenvolvida em NodeJS e Express e testada usando Jest e Supertest. 
 
